@@ -1,0 +1,88 @@
+body, html {
+  /*background: linear-gradient(180deg, rgba(255,205,0,1) 0%, rgba(255,217,60,1) 0%, rgba(255,158,0,1) 100%);
+  */
+  color: black;
+  margin: 0;
+  padding: 0;
+  font-family: Lexend, serif;
+  /*background-image: url(images/left-contact.png) top left no-repeat;*/
+  background-color: #E5A951;
+  /*background: url(images/left-contact.png) top left no-repeat, url(images/right-contact.png) top right no-repeat, #E5A951;
+  /*make container with profile and paragraph with background color semi transparent and make original moon drawings so it can go through it
+  background:url(images/crater1.png) top left no-repeat, #E5A951; */
+}
+
+
+
+.crater1 {
+  position: absolute;
+  z-index: 1;
+  margin-top:2%;
+  margin-left:5%;
+  height:20%;
+}
+
+.crater2 {
+  position:absolute;
+  z-index: 1;
+  margin-top: 30%;
+  margin-left: 5%;
+  height: 30%;
+}
+
+.crater3 {
+  position:absolute;
+  z-index: 1;
+  margin-top: 5%;
+  margin-left: 90%;
+  height: 30%;
+}
+
+a:link, a:visited {
+  color: darkslategray;
+}
+
+a:hover {
+  opacity: 0.8;
+}
+
+p {
+  font-size: large;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+
+}
+
+.container2 {
+  text-align: center;
+}
+
+.content-box {
+  position:relative;
+  flex: 1;
+  min-width: 300px;
+  max-width: 500px;
+  padding: 20px;
+  background-color: rgb(229, 169, 81,0.5);
+  z-index:2;
+}
+
+iframe {
+  width: 100%;
+  height: 500px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+}

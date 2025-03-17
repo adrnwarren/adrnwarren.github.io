@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+body {
+  font-family: Lexend, serif;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background-image: url("./images/tent-background.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 50px;
+}
+header {
+  position: relative;
+  padding: 50px 20px;
+  overflow: hidden;
+}
+#header {
+  font-size: 2em;
+  position: relative;
+  z-index: 1;
+}
+/* Grid layout: 2 items in row 1, 1 item (spanning 2 columns) in row 2, 2 items in row 3 */
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+/* Make the third project span both columns */
+.portfolio-grid .project:nth-child(3) {
+  grid-column: 1 / span 2;
+}
+.project {
+  text-align: center;
+}
+.project a img {
+  height: 200px;
+  width: auto;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+.project a img:hover {
+  transform: scale(1.1);
+}
+.category {
+  margin-top: 10px;
+  font-size: 1.4em;
+}
