@@ -59,7 +59,7 @@ html, body {
   position: absolute;
   top: 25px;
   right: 25px;
-  width: 12%;
+  width: 10%;
   transition: transform 0.5s ease;
   z-index: 5;
 }
@@ -86,7 +86,6 @@ html, body {
   bottom: 0;
   left: 5%;
   height: 90vh;
-  width:0%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -106,8 +105,7 @@ html, body {
   position: absolute;
   bottom: 0;
   left: 28%;
-  /*height: 50%;*/
-  width:40%;
+  height: 50vh;
   z-index: 3;
 }
 
@@ -116,8 +114,7 @@ html, body {
   position: absolute;
   bottom: 0;
   left: 52%;
-  /*height: 35%;*/
-  width:20%;
+  height: 35vh;
   transform: rotate(-5deg);
   z-index: 4;
   transition: transform 0.5s ease;
@@ -132,7 +129,6 @@ html, body {
   position: absolute;
   bottom: 0;
   left: 75%;
-  /*height: 30vh;*/
-  width: 15%;
+  height: 30vh;
   z-index: 3;
 }
